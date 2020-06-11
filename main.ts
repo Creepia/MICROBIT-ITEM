@@ -1,7 +1,8 @@
 // this function will run in background all the
-// numbers here should be integer % block="Item"
+// numbers here should be integer
+//% weight=0 color=#ADD8E6 block="Item"
 namespace Item {
-    //% block="starttime = %starttime endtime = %endtime delay = %delay IsShown? %IsShown"
+    //% blockId="autoCount" block="starttime = %starttime endtime = %endtime delay = %delay IsShown? %IsShown"
     export function autoCount(starttime: number, endtime: number, delay: number = 1000, IsShown: boolean = true): void {
         control.inBackground(function () {
             if (starttime <= endtime) {
