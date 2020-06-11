@@ -2,7 +2,7 @@
 // numbers here should be integer % block="Item"
 namespace Item {
     //% block="starttime = %starttime endtime = %endtime delay = %delay IsShown? %IsShown"
-    export function autoCount(starttime: number, endtime: number, delay: number = 1000, IsShown: boolean = true) {
+    export function autoCount(starttime: number, endtime: number, delay: number = 1000, IsShown: boolean = true): void {
         control.inBackground(function () {
             if (starttime <= endtime) {
                 for (let t = starttime; t <= endtime; t++) {
